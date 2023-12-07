@@ -11,5 +11,5 @@ class ItemCrud:
         return cls.model.objects.all()
 
     @classmethod
-    def get_by_list_id(cls, item_ids: list) -> list[dict]:
+    def get_by_list_id(cls, item_ids: list) -> QuerySet[list[dict]]:
         return cls.model.objects.filter(pk__in=item_ids).values('id', 'title', 'price')
