@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <section class="wrapper">
+        <div class="check">
+            ООО "КОМПАНИЯ К"<br>
+            Добро пожаловать<br>
+            ККМ 00075411 #3969<br>
+            ИНН 100000000000<br>
+            {{ date }}<br>
+            {% for item in items %}
+            {{ item.title }}<br>
+            {{ item.amount }} = {{ item.price }}<br>
+            {% endfor %}
+            <br>
+            <b>ИТОГ {{ total }}</b>
+            Наличными ={{ total }}<br>
+            ********************<br>
+            00003751# 05970
+
+        </div>
+    </section>
+</body>
+</html>
+
+    <style>
+        .wrapper {
+            width: 526px;
+            height: 364px;
+            margin: auto;
+        }
+
+        .check {
+            font-size: 25px;
+            padding: 60px 40px;
+        }
+
+
+    </style>

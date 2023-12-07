@@ -1,0 +1,6 @@
+Django
+djangorestframework
+qrcode[pil]
+isort
+flake8
+pdfkit
